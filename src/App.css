@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+:root {
+  --dark: #001d39;
+  --primary: #0a4174;
+  --accent: #49769f;
+  --teal: #4e8ea2;
+  --soft: #6ea2b3;
+  --light: #7bbde8;
+  --extra-light: #bdd8e9;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background: linear-gradient(var(--dark), var(--accent));
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  text-align: center;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav {
+  margin-bottom: 20px;
+}
+
+nav button {
+  margin: 5px;
+  padding: 10px 18px;
+  background: var(--teal);
+  border: none;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+nav button:hover {
+  background: var(--soft);
+  transform: scale(1.05);
+}
+
+.container {
+  background: var(--extra-light);
+  color: #001d39;
+  padding: 20px;
+  width: 85%;
+  max-width: 900px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+input, select {
+  width: 70%;
+  padding: 10px;
+  margin: 7px 0;
+  border-radius: 12px;
+  border: 1px solid var(--primary);
+}
+
+table {
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: black;
+}
+
+table th {
+  background: var(--primary);
+  color: white;
+  padding: 10px;
+}
+
+button.action {
+  padding: 8px 12px;
+  margin: 3px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.edit {
+  background: var(--teal);
+  color: white;
+}
+
+button.delete {
+  background: #e63946;
+  color: white;
 }
