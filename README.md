@@ -1,7 +1,7 @@
 # Clinic Appointment System - Full Stack CRUD Application
 
 ## Live Links
-- **Frontend:** 
+- **Frontend:** :https://vercel.com/azel-esquierras-projects/se-frontend
 - **Backend API:** https://se-backend-5mmf.onrender.com
 
 ## Features
@@ -14,7 +14,7 @@ Complete CRUD operations (Create, Read, Update, Delete)
 ## Technology Stack
 - **Frontend:** React.js, CSS
 - **Backend:** Node.js, Express.js, MongoDB
-- **Deployment:**  Render (backend)
+- **Deployment:** Vercel (frontend), Render (backend)
 - **Database:** MongoDB Atlas
 
 ## API Endpoints
